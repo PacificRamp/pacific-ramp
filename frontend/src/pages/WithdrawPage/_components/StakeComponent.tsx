@@ -39,7 +39,7 @@ const OPTIONS: OptionsStake[] = [
     value: "Manta CeDeFi",
   },
   {
-    img: "https://resources.accumulated.finance/platforms/acfi.png",
+    img: "https://storage.googleapis.com/techave/acfi.png",
     value: "Accumulated Finance",
   },
 ];
