@@ -1,0 +1,61 @@
+specVersion: 1.0.0
+indexerHints:
+  prune: auto
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: pacificramp
+    network: manta-pacific-mainnet
+    source:
+      address: "0x5e793e2278a55d9b7e641297fb277e7671a13009"
+      abi: pacificramp
+      startBlock: 4546595
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - OfframpRequest
+        - FillOfframp
+        - Transfer
+        - Withdraw
+        - Mint
+        - RequestOfframp
+        - NewTaskCreated
+        - TaskResponded
+        - Task
+        - Operator
+        - Token
+        - OnRamp
+        - Stake
+      abis:
+        - name: pacificramp
+          file: ./abis/pacificramp.json
+      eventHandlers:
+        - event: RequestOfframp(bytes32,(address,uint256,uint256,bytes32,bytes32,uint32))
+          handler: handleRequestOfframp
+        - event: FillOfframp(bytes32,address,bytes32,bytes32)
+          handler: handleFillOfframp
+        - event: NewTaskCreated(indexed uint32,(string,string,bytes32,address,uint32))
+          handler: handleNewTaskCreated
+        - event: TaskResponded(indexed uint32,(string,string,bytes32,address,uint32),address)
+          handler: handleTaskResponded
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+        - event: Mint(indexed address,uint256)
+          handler: handleMint
+        - event: Withdraw(indexed address,uint256)
+          handler: handleWithdraw
+        - event: OnRampAccepted(bytes32,string,address)
+          handler: handleOnRampAccepted
+        - event: OnRampCompleted(bytes32,address,uint256)
+          handler: handleOnRampCompleted
+        - event: ReceiptIdSubmitted(bytes32,string)
+          handler: handleReceiptIdSubmitted
+        - event: OnRampRequested(bytes32,address,uint256)
+          handler: handleOnRampRequested
+        - event: StakeSettled(indexed address,uint256,string)
+          handler: handleStakeSettled
+
+      file: ./src/pacificramp.ts

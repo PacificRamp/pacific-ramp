@@ -1,0 +1,21 @@
+{
+  "name": "pacificramp-subgraph",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.studio.thegraph.com/deploy/ pacificramp-subgraph",
+    "create-local": "graph create --node http://localhost:8020/ pacificramp-subgraph",
+    "remove-local": "graph remove --node http://localhost:8020/ pacificramp-subgraph",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 pacificramp-subgraph",
+    "test": "graph test"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.86.0",
+    "@graphprotocol/graph-ts": "0.32.0"
+  },
+  "devDependencies": {
+    "matchstick-as": "0.5.0"
+  },
+  "packageManager": "pnpm@9.15.0+sha512.76e2379760a4328ec4415815bcd6628dee727af3779aaa4c914e3944156c4299921a89f976381ee107d41f12cfa4b66681ca9c718f0668fa0831ed4c6d8ba56c"
+}
