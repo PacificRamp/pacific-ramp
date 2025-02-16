@@ -16,7 +16,7 @@
 
 ## Overview
 
-PacificRamp leverages blockchain technology, stablecoins, and AVS (Automated Validation System) to democratize access to DeFi. By connecting real-world assets to the blockchain ecosystem, it ensures compliance, security, and reliability for all users.
+PacificRamp leverages blockchain technology, stablecoins, and AVS to democratize access to DeFi. By connecting real-world assets to the blockchain ecosystem, it ensures compliance, security, and reliability for all users.
 
 ---
 
