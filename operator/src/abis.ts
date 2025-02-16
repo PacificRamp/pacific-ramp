@@ -10,6 +10,7 @@ const contractsToExtract = [
   "IDelegationManager",
   "ECDSAStakeRegistry",
   "PacificRampServiceManager",
+  "USDMmock",
 ];
 
 if (!fs.existsSync(abiDir)) {

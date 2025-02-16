@@ -35,7 +35,7 @@ interface OptionsStake {
 
 const OPTIONS: OptionsStake[] = [
   {
-    img: "https://images.seeklogo.com/logo-png/47/2/manta-network-manta-logo-png_seeklogo-476308.png",
+    img: "https://storage.googleapis.com/techave/manta-network-manta-logo-png_seeklogo-476308.png",
     value: "Manta CeDeFi",
   },
   {
@@ -129,7 +129,7 @@ export const StakeComponent = () => {
     if (
       !selectedProvider ||
       !stakeAmount ||
-      insufficientBalance 
+      insufficientBalance
       // !isStakePending ||
       // !isApprovalPending
     ) {

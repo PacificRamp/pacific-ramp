@@ -119,14 +119,10 @@ const signAndRespondToTask = async (
     console.log(chalk.blue("📡 Calling API to generate proof..."));
     const publicOptions = {
       method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer Test",
-      },
     };
 
     const proof = await client.zkFetch(
-      `https://jsonplaceholder.typicode.com/todos/1`,
+      `https://gist.githubusercontent.com/azizrosyid/80dff4294768c522fdec8dddefb052db/raw/b626ae9112a1e1f81581d9a0c23cb34e6757c98e/mock-bank.json`,
       publicOptions,
       { responseMatches: [{ type: "regex", value: "(?<all>.*)" }] }
     );

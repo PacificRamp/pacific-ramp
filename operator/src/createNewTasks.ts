@@ -42,7 +42,7 @@ const avsDeploymentData: DeploymentData = JSON.parse(
   fs.readFileSync(
     path.resolve(
       __dirname,
-      `../../contracts/deployments/jackramp/${chainId}.json`
+      `../../contracts/deployments/pacificRamp/${chainId}.json`
     ),
     "utf8"
   )
@@ -50,7 +50,7 @@ const avsDeploymentData: DeploymentData = JSON.parse(
 
 const pacificRampServiceManagerAddress: string =
   avsDeploymentData.addresses.pacificRampServiceManager;
-const USDMAddress: string = "0x3620f69a5d745260544692164cc8c7ff736e54b5"; // USDM address
+const USDMAddress: string = avsDeploymentData.addresses.underlyingUSD;
 
 const pacificRampServiceManagerABI = JSON.parse(
   fs.readFileSync(
@@ -60,7 +60,7 @@ const pacificRampServiceManagerABI = JSON.parse(
 );
 const USDMABI = JSON.parse(
   // Replace ABI with USDM ABI
-  fs.readFileSync(path.resolve(__dirname, "../../abis/USDM.json"), "utf8")
+  fs.readFileSync(path.resolve(__dirname, "../../abis/USDMmock.json"), "utf8")
 );
 
 // Initialize contract objects
