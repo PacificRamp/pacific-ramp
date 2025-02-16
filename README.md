@@ -10,8 +10,6 @@
 - [Components](#components)
 - [Demo](#demo)
 - [Documentation](#documentation)
-- [Getting Started](#getting-started)
-- [Contributing](#contributing)
 - [License](#license)
 
 ---
