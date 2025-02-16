@@ -1,0 +1,34 @@
+{
+  "transactions": [
+    {
+      "rpc": "https://pacific-rpc.manta.network/http"
+    },
+    {
+      "rpc": "https://pacific-rpc.manta.network/http"
+    },
+    {
+      "rpc": "https://pacific-rpc.manta.network/http"
+    },
+    {
+      "rpc": "https://pacific-rpc.manta.network/http"
+    },
+    {
+      "rpc": "https://pacific-rpc.manta.network/http"
+    },
+    {
+      "rpc": "https://pacific-rpc.manta.network/http"
+    },
+    {
+      "rpc": "https://pacific-rpc.manta.network/http"
+    },
+    {
+      "rpc": "https://pacific-rpc.manta.network/http"
+    },
+    {
+      "rpc": "https://pacific-rpc.manta.network/http"
+    },
+    {
+      "rpc": "https://pacific-rpc.manta.network/http"
+    }
+  ]
+}
